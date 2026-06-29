@@ -26,7 +26,7 @@ export const HERO = {
   eyebrow: "AI-Accelerated · Seasoned Engineering",
   headline: "Edward De Guzman",
   subhead:
-    "Senior Full Stack Engineer with 14+ years of real software engineering experience. I use AI to accelerate development—guided by the judgment that only comes from a decade of building, deploying, and maintaining production systems.",
+    "Senior Full Stack Engineer with 14+ years of real software engineering experience. I use AI to accelerate development—building agent-driven workflows with Cursor Automations, guided by the judgment that only comes from a decade of building, deploying, and maintaining production systems.",
   primaryCta: { label: "View Projects", href: "#projects" },
   secondaryCta: { label: "Download Resume", href: "/Resume.pdf" },
 };
@@ -34,7 +34,7 @@ export const HERO = {
 export const ABOUT = {
   eyebrow: "About",
   title: "Engineering judgment meets AI velocity",
-  body: "I'm a senior full-stack engineer who has spent more than a decade in the trenches—shipping web and mobile apps, debugging production incidents, and owning deployments end to end. Today, I'm deeply into AI-accelerated software development: using tools like Cursor and modern AI assistants to move faster on implementation, while grounding every decision in real engineering experience—solid architecture, secure defaults, maintainable code, and reliable CI/CD. That combination lets me deliver production-quality software at a pace that keeps up with today's expectations.",
+  body: "I'm a senior full-stack engineer who has spent more than a decade in the trenches—shipping web and mobile apps, debugging production incidents, and owning deployments end to end. Today, I'm deeply into AI-accelerated software development: using tools like Cursor and modern AI assistants to move faster on implementation, while grounding every decision in real engineering experience—solid architecture, secure defaults, maintainable code, and reliable CI/CD. I have designed and built an AI-automated delivery workflow with Cursor Automations—an agent-driven GitHub lifecycle (plan, code, unit-test, review, document, test) orchestrated through webhooks, relay services, and MCP integrations. That combination lets me deliver production-quality software at a pace that keeps up with today's expectations.",
 };
 
 export const SKILL_GROUPS = [
@@ -79,7 +79,9 @@ export const SKILL_GROUPS = [
     title: "AI & Workflow",
     icon: "sparkles" as const,
     items: [
-      "AI-assisted development (Cursor, LLM tooling)",
+      "Cursor Automations (agent-driven plan / code / test / review / document workflows)",
+      "AI automation kit authoring (@cc-talent/cursor-automation-kit)",
+      "GitHub webhooks, relay orchestration, and MCP (GitHub, SonarQube)",
       "Prompt-driven iteration with engineering review",
       "AI-accelerated prototyping → production hardening",
     ],
@@ -101,6 +103,16 @@ export type Project = {
 };
 
 export const PROJECTS: Project[] = [
+  {
+    id: "cursor-automation-kit",
+    title: "Cursor Automation Kit",
+    description:
+      "Designed and built @cc-talent/cursor-automation-kit — an npm scaffold that connects GitHub webhooks to six Cursor Automations (plan, code, unit-test, review, document, test) for an agent-driven software delivery lifecycle with CI, Sonar, Snyk, and MCP integrations.",
+    tech: ["Cursor Automations", "Node.js", "GitHub Actions", "MCP", "SonarQube", "Graphify"],
+    image: "/images/projects/cursor-automation-kit.svg",
+    link: "https://github.com/CC-Talent/cursor-automation-kit",
+    linkLabel: "View Cursor Automation Kit on GitHub",
+  },
   {
     id: "iperform",
     title: "iPerform",
@@ -158,12 +170,12 @@ export const EXPERIENCE = [
     location: "Clark Freeport Zone",
     period: "Feb 2025 – Present",
     bullets: [
+      "Designed and built @cc-talent/cursor-automation-kit — an AI-automated workflow using Cursor Automations for plan, code, unit-test, review, document, and test agents orchestrated via GitHub webhooks and Cinco relay.",
       "Maintain Kubernetes-based production deployments on Azure, resolving incidents and configuration changes across containerized workloads.",
       "Manage infrastructure as code with FluxCD, Terraform, and Helm for reliable, repeatable releases.",
-      "Troubleshoot full-stack bugs to uphold security, stability, performance, and user experience.",
       "Optimize slow integration tests and CI/CD pipelines to improve build performance and reduce deployment times.",
     ],
-    tech: ["Docker", "Kubernetes", "Azure", "AngularJS", "Node.js", "FluxCD", "Terraform", "Helm"],
+    tech: ["Docker", "Kubernetes", "Azure", "Cursor Automations", "Node.js", "FluxCD", "Terraform", "Helm"],
   },
   {
     title: "Senior Full Stack Developer",
@@ -208,6 +220,6 @@ export const EARLIER_EXPERIENCE =
 
 export const FOOTER = {
   tagline:
-    "Senior full-stack engineer building production systems with AI-accelerated workflows.",
+    "Senior full-stack engineer building production systems with AI-accelerated workflows and Cursor Automations.",
   copyright: `© ${new Date().getFullYear()} Edward De Guzman. All rights reserved.`,
 };
