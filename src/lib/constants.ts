@@ -94,10 +94,10 @@ export type Project = {
   image: string;
   link?: string;
   linkLabel?: string;
-  featuredApp?: {
+  featuredApps?: {
     name: string;
     link: string;
-  };
+  }[];
 };
 
 export const PROJECTS: Project[] = [
@@ -110,10 +110,16 @@ export const PROJECTS: Project[] = [
     image: "/images/projects/iperform.png",
     link: "https://iperformapp.com",
     linkLabel: "Visit iPerform website",
-    featuredApp: {
-      name: "Orange & Lemons",
-      link: "https://apps.apple.com/ph/app/orange-lemons/id6737976034",
-    },
+    featuredApps: [
+      {
+        name: "Orange & Lemons",
+        link: "https://apps.apple.com/ph/app/orange-lemons/id6737976034",
+      },
+      {
+        name: "Chocolate Factory",
+        link: "https://apps.apple.com/sa/app/chocolate-factory-band/id6740174598",
+      },
+    ],
   },
   {
     id: "aia-vitality",
