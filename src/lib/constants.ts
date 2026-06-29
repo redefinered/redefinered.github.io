@@ -46,12 +46,12 @@ export const SKILL_GROUPS = [
   {
     title: "Frontend",
     icon: "layout" as const,
-    items: ["React", "React Native", "AngularJS", "Redux", "HTML5", "CSS3"],
+    items: ["React", "React Native", "AngularJS", "Redux", "Tailwind CSS", "Material UI", "HTML5", "CSS3"],
   },
   {
     title: "Backend",
     icon: "server" as const,
-    items: ["Node.js", "GraphQL", "Hono", "Socket.io", "REST APIs"],
+    items: ["Node.js", "GraphQL", "Hono", "Socket.io", "REST APIs", "Firebase"],
   },
   {
     title: "Cloud & DevOps",
@@ -73,7 +73,7 @@ export const SKILL_GROUPS = [
   {
     title: "Databases",
     icon: "database" as const,
-    items: ["Firebase", "Drizzle ORM", "Prisma"],
+    items: ["Firestore", "PostgreSQL", "MySQL", "Drizzle ORM", "Prisma"],
   },
   {
     title: "AI & Workflow",
