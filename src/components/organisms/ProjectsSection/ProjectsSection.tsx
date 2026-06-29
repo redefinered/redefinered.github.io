@@ -51,7 +51,7 @@ export function ProjectsSection() {
                         target="_blank"
                         rel="noreferrer"
                         className="text-cyan-400 hover:text-cyan-300"
-                        aria-label={`View ${project.title}`}
+                        aria-label={project.linkLabel ?? `View ${project.title}`}
                       >
                         <ExternalLink className="h-4 w-4" />
                       </a>
@@ -60,6 +60,21 @@ export function ProjectsSection() {
                   <p className="mt-2 text-sm leading-relaxed text-zinc-400">
                     {project.description}
                   </p>
+                  {project.featuredApp && (
+                    <p className="mt-3 text-sm text-zinc-500">
+                      Featured artist app:{" "}
+                      <a
+                        href={project.featuredApp.link}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center gap-1 text-cyan-400 hover:text-cyan-300"
+                        aria-label={`View ${project.featuredApp.name} on the App Store`}
+                      >
+                        {project.featuredApp.name}
+                        <ExternalLink className="h-3.5 w-3.5" />
+                      </a>
+                    </p>
+                  )}
                   <div className="mt-4 flex flex-wrap gap-2">
                     {project.tech.map((tech) => (
                       <span

@@ -86,7 +86,21 @@ export const SKILL_GROUPS = [
   },
 ];
 
-export const PROJECTS = [
+export type Project = {
+  id: string;
+  title: string;
+  description: string;
+  tech: string[];
+  image: string;
+  link?: string;
+  linkLabel?: string;
+  featuredApp?: {
+    name: string;
+    link: string;
+  };
+};
+
+export const PROJECTS: Project[] = [
   {
     id: "iperform",
     title: "iPerform",
@@ -94,6 +108,12 @@ export const PROJECTS = [
       "A SaaS streaming platform for musicians to upload concerts, video streams, and latest music.",
     tech: ["React Native", "Node.js", "Streaming"],
     image: "/images/projects/iperform.png",
+    link: "https://iperformapp.com",
+    linkLabel: "Visit iPerform website",
+    featuredApp: {
+      name: "Orange & Lemons",
+      link: "https://apps.apple.com/ph/app/orange-lemons/id6737976034",
+    },
   },
   {
     id: "aia-vitality",
@@ -102,6 +122,8 @@ export const PROJECTS = [
       "Health app partnership with Virgin Active. Built the fitness assessment feature in React Native.",
     tech: ["React Native", "HealthTech"],
     image: "/images/projects/aia-vitality.png",
+    link: "https://apps.apple.com/ph/app/aia-vitality-philippines/id1536532179",
+    linkLabel: "View AIA Vitality on the App Store",
   },
   {
     id: "iplayya",
@@ -119,6 +141,7 @@ export const PROJECTS = [
     tech: ["React Native", "Redux", "GraphQL"],
     image: "/images/projects/lifeteen.png",
     link: "https://itunes.apple.com/ph/app/life-teen-purpose/id1455507051?mt=8",
+    linkLabel: "View LifeTeen Purpose on the App Store",
   },
 ];
 
