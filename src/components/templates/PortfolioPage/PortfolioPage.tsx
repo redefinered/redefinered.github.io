@@ -6,8 +6,11 @@ import { ProjectsSection } from "@/components/organisms/ProjectsSection/Projects
 import { SiteFooter } from "@/components/organisms/SiteFooter/SiteFooter";
 import { SiteHeader } from "@/components/organisms/SiteHeader/SiteHeader";
 import { SkillsSection } from "@/components/organisms/SkillsSection/SkillsSection";
+import { useHashScroll } from "@/hooks/useHashScroll";
 
 export function PortfolioPage() {
+  useHashScroll();
+
   return (
     <div className="min-h-screen bg-[#0a0a0f]">
       <SiteHeader />

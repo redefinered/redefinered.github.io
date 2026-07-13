@@ -15,6 +15,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 4.5rem; /* sticky header (h-16) + gap */
 }
 
 @media (prefers-reduced-motion: reduce) {
