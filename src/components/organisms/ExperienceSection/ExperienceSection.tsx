@@ -14,7 +14,7 @@ export function ExperienceSection() {
         <SectionHeading
           eyebrow="Experience"
           title="Professional experience"
-          description="14+ years building and shipping software across web, mobile, and cloud infrastructure."
+          description="15 years building and shipping software across web, mobile, and cloud infrastructure."
         />
         <div className="space-y-6">
           {EXPERIENCE.map((job, index) => (

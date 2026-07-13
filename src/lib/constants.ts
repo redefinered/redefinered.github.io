@@ -26,7 +26,7 @@ export const HERO = {
   eyebrow: "AI-Accelerated · Seasoned Engineering",
   headline: "Edward De Guzman",
   subhead:
-    "Senior Full Stack Engineer with 14+ years of real software engineering experience. I use AI to accelerate development—guided by the judgment that only comes from a decade of building, deploying, and maintaining production systems.",
+    "Senior Full Stack Engineer with 15 years of real software engineering experience. I use AI to accelerate development—guided by the judgment that only comes from a decade of building, deploying, and maintaining production systems.",
   primaryCta: { label: "View Projects", href: "#projects" },
   secondaryCta: { label: "Download Resume", href: "/Resume.pdf" },
 };
