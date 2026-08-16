@@ -31,7 +31,7 @@ export function SkillsSection() {
         <SectionHeading
           eyebrow="Skills"
           title="Technical proficiencies"
-          description="A decade of production experience across the full stack, plus AI-accelerated workflows."
+          description="15 years of production experience across the full stack, plus AI-accelerated workflows."
         />
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {SKILL_GROUPS.map((group, index) => {

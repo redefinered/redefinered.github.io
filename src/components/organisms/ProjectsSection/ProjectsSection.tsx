@@ -16,7 +16,7 @@ export function ProjectsSection() {
         <SectionHeading
           eyebrow="Projects"
           title="Featured work"
-          description="Production applications across health, streaming, IPTV, and community platforms."
+          description="Production applications across parking, streaming, health, and community platforms."
         />
         <div className="grid gap-6 sm:grid-cols-2">
           {PROJECTS.map((project, index) => (

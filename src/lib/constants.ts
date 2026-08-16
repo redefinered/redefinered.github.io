@@ -26,7 +26,7 @@ export const HERO = {
   eyebrow: "AI-Accelerated · Seasoned Engineering",
   headline: "Edward De Guzman",
   subhead:
-    "Senior Full Stack Engineer with 15 years of real software engineering experience. I use AI to accelerate development—guided by the judgment that only comes from a decade of building, deploying, and maintaining production systems.",
+    "Senior Full Stack Engineer with 15 years of hands-on software engineering experience building scalable web and mobile applications. Passionate about AI-accelerated software development—leveraging modern AI tooling to ship faster while applying the architectural rigor, security practices, and production discipline of a seasoned engineer. Experienced across SaaS, Streaming Media, HealthTech, Insurance, Social Media, and E-commerce.",
   primaryCta: { label: "View Projects", href: "#projects" },
   secondaryCta: { label: "Download Resume", href: "/Resume.pdf" },
 };
@@ -34,7 +34,7 @@ export const HERO = {
 export const ABOUT = {
   eyebrow: "About",
   title: "Engineering judgment meets AI velocity",
-  body: "I'm a senior full-stack engineer who has spent more than a decade in the trenches—shipping web and mobile apps, debugging production incidents, and owning deployments end to end. Today, I'm deeply into AI-accelerated software development: using tools like Cursor and modern AI assistants to move faster on implementation, while grounding every decision in real engineering experience—solid architecture, secure defaults, maintainable code, and reliable CI/CD. I have also developed an end-to-end AI-automated software development workflow using Cursor Automations. That combination lets me deliver production-quality software at a pace that keeps up with today's expectations.",
+  body: "I'm a senior full-stack engineer with 15 years of hands-on experience building scalable web and mobile applications. I use AI to ship faster—Cursor, LLM tooling, and an end-to-end AI-automated software development workflow with Cursor Automations—while keeping the architectural rigor, security practices, and production discipline of a seasoned engineer. Strong background in Node.js, React, React Native, cloud-native systems, Kubernetes, CI/CD, and Infrastructure as Code. I've worked across SaaS, Streaming Media, HealthTech, Insurance, Social Media, and E-commerce.",
 };
 
 export const SKILL_GROUPS = [
@@ -82,7 +82,7 @@ export const SKILL_GROUPS = [
       "End-to-end AI-automated software development workflow (Cursor Automations)",
       "AI-assisted development (Cursor, LLM tooling)",
       "Prompt-driven iteration with engineering review",
-      "AI-accelerated prototyping → production hardening",
+      "AI-accelerated prototyping",
     ],
   },
 ];
@@ -103,10 +103,20 @@ export type Project = {
 
 export const PROJECTS: Project[] = [
   {
+    id: "parku",
+    title: "ParkU",
+    description:
+      "Smart parking discovery for the Philippines. Drivers list a spot as they leave; arriving drivers reserve it before they get there—handoff, chat, and in-app GCash payments.",
+    tech: ["React Native", "Maps", "Payments"],
+    image: "/images/projects/parku.png",
+    link: "https://apps.apple.com/ph/app/parku/id6763227337",
+    linkLabel: "View ParkU on the App Store",
+  },
+  {
     id: "iperform",
     title: "iPerform",
     description:
-      "A SaaS streaming platform for musicians to upload concerts, video streams, and latest music.",
+      "Musician streaming SaaS platform for uploading concerts, video streams, and latest music.",
     tech: ["React Native", "Node.js", "Streaming"],
     image: "/images/projects/iperform.png",
     link: "https://iperformapp.com",
@@ -133,14 +143,6 @@ export const PROJECTS: Project[] = [
     linkLabel: "View AIA Vitality on the App Store",
   },
   {
-    id: "iplayya",
-    title: "iPlayya",
-    description:
-      "Cross-platform IPTV mobile application built for Deluge Technology Trading Corp.",
-    tech: ["React Native", "GraphQL", "Firebase"],
-    image: "/images/projects/iplayya.png",
-  },
-  {
     id: "lifeteen-purpose",
     title: "LifeTeen Purpose",
     description:
@@ -156,46 +158,50 @@ export const EXPERIENCE = [
   {
     title: "Senior Full Stack Developer",
     company: "CCTalent",
-    location: "Clark Freeport Zone",
-    period: "Feb 2025 – Present",
+    location: "Clark Freeport Zone, Pampanga",
+    period: "Feb 2025 – July 2026",
     bullets: [
-      "Developed an end-to-end AI-automated software development workflow using Cursor Automations.",
-      "Maintain Kubernetes-based production deployments on Azure, resolving incidents and configuration changes across containerized workloads.",
-      "Manage infrastructure as code with FluxCD, Terraform, and Helm for reliable, repeatable releases.",
-      "Optimize slow integration tests and CI/CD pipelines to improve build performance and reduce deployment times.",
+      "Designed and implemented an end-to-end AI-automated software development workflow using Cursor Automations, accelerating feature delivery while maintaining engineering quality and production standards.",
+      "Managed Kubernetes-based production environments on Azure, resolving production incidents and implementing configuration changes across containerized applications with minimal downtime.",
+      "Owned GitOps and Infrastructure as Code workflows using FluxCD, Terraform, and Helm to deliver consistent, repeatable, and reliable deployments.",
+      "Optimized integration tests and CI/CD pipelines, reducing build bottlenecks and improving developer productivity and deployment efficiency.",
     ],
     tech: ["Docker", "Kubernetes", "Azure", "AngularJS", "Node.js", "FluxCD", "Terraform", "Helm"],
   },
   {
     title: "Senior Full Stack Developer",
     company: "Lions and Legacy",
-    location: "BGC",
+    location: "BGC, NCR",
     period: "Sep 2024 – Feb 2025",
     bullets: [
-      "Built web and mobile applications with React, React Native, and Node.js.",
-      "Implemented real-time chat, notifications, and commenting with Socket.io.",
-      "Developed scalable backend APIs on Cloudflare Workers using Hono and Drizzle ORM.",
-      "Deployed applications to Vercel with modern CI/CD workflows.",
+      "Built and delivered web and mobile applications using React, React Native, and Node.js, contributing across the full software development lifecycle from implementation to production deployment.",
+      "Developed scalable backend APIs on Cloudflare Workers using Hono and Drizzle ORM, enabling low-latency serverless services.",
+      "Implemented real-time chat, notifications, and commenting features using Socket.io to enhance user engagement and collaboration.",
+      "Integrated secure subscription and payment processing into the iPerform platform, enabling recurring billing and a seamless purchase experience.",
+      "Deployed and maintained applications on Vercel with modern CI/CD workflows, ensuring reliable and efficient releases.",
     ],
     tech: ["React", "React Native", "Node.js", "Cloudflare Workers", "Socket.io", "Vercel"],
   },
   {
     title: "Senior Developer",
     company: "Coherent Global",
-    location: "Ayala",
-    period: "Sep 2022 – Oct 2024",
+    location: "Makati City, NCR",
+    period: "Jan 2021 – Oct 2024",
     bullets: [
-      "Maintained production web applications and proactively managed production incidents.",
-      "Hardened container image builds and dependencies with Trivy for Kubernetes client deployments.",
-      "Owned CI/CD pipelines with GitHub Actions and CircleCI across Linux-based infrastructure.",
+      "Resolved production incidents across React.js, Node.js, C#, and F# services.",
+      "Developed frontend and backend features and enhancements for a microservices-based SaaS platform.",
+      "Improved the security and stability of container images deployed to Azure Kubernetes Service (AKS).",
+      "Diagnosed and mitigated Kubernetes infrastructure and deployment issues.",
+      "Collaborated with engineering teams to coordinate incident response and deliver production-ready solutions.",
+      "Supported CI/CD pipelines and deployment processes to ensure reliable software releases.",
     ],
     tech: ["Node.js", "React", "Docker", "Kubernetes", "Helm", "C#", "F#", "GitHub Actions"],
   },
   {
-    title: "Senior Software Developer",
-    company: "Deluge Technology Corporation",
-    location: "Angeles City, Pampanga",
-    period: "Oct 2020 – Jan 2022",
+    title: "React Native Developer",
+    company: "Get Devs",
+    location: "Makati City, NCR",
+    period: "Aug 2017 – Jun 2020",
     bullets: [
       "Architected and built a React Native IPTV application from the ground up.",
       "Collaborated on backend design using GraphQL, Redux-saga, and Firebase.",
@@ -205,7 +211,7 @@ export const EXPERIENCE = [
 ];
 
 export const EARLIER_EXPERIENCE =
-  "React Native Developer at GetDevs · Senior Web Developer at Boomering Inc. · Senior Front-end Developer at Site Skills Training · Front-end Developer at Linkage Web Development (2013–2020)";
+  "Senior Front-end Developer at Site Skills Training · Front-end Developer at Linkage Web Development (2013–2020)";
 
 export const FOOTER = {
   tagline:
