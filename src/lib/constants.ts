@@ -107,7 +107,16 @@ export const PROJECTS: Project[] = [
     title: "ParkU",
     description:
       "Smart parking discovery for the Philippines. Drivers list a spot as they leave; arriving drivers reserve it before they get there—handoff, chat, and in-app GCash payments.",
-    tech: ["React Native", "Maps", "Payments"],
+    tech: [
+      "React Native",
+      "Expo",
+      "Express",
+      "Firebase",
+      "Firestore",
+      "Xendit",
+      "Google Maps",
+      "Kubernetes",
+    ],
     image: "/images/projects/parku.png",
     link: "https://apps.apple.com/ph/app/parku/id6763227337",
     linkLabel: "View ParkU on the App Store",
